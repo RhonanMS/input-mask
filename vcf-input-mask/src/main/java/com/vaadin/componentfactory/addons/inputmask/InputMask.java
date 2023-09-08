@@ -105,7 +105,7 @@ public class InputMask extends Component {
             valueChangeRegistration.remove();
             valueChangeRegistration = null;
         }
-        if (extended != null) {
+        if (extended != null && extended.get != null) {
             getElement().removeFromParent();
             extended.clear();
         }
